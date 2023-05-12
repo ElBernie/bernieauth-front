@@ -24,4 +24,4 @@ This project is experimental and is not intended for production use. It is a pla
 
 ## Notes
 
-You can find my personal notes about this project in the [docs/NOTES.md](docs/NOTES.md) file.
+You can find my personal notes about this project in the [docs/NOTES.md](docs/NOTES.md) file. Also contains knowns bugs.
