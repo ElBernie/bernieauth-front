@@ -15,12 +15,13 @@ This project is experimental and is not intended for production use. It is a pla
 - Vite
 - React
 - Redux
+- [@tanstack/query](https://tanstack.com/query/latest) with Axios
 - [@tanstack/router](https://tanstack.com/)
 
 ### planned stack
-
-- [@tanstack/query](https://tanstack.com/query/latest)
 - tailwindcss
+- react-hook-form
+
 
 ## Notes
 
