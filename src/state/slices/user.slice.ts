@@ -2,20 +2,18 @@ import { createSlice } from '@reduxjs/toolkit';
 
 import { UserSlice } from '../../types/user.type';
 import type { PayloadAction } from '@reduxjs/toolkit';
-const initialState: Partial<UserSlice> = {
-	id: undefined,
-	firstName: undefined,
-};
+const initialState: Partial<UserSlice> = {};
 
 export const userSlice = createSlice({
 	name: 'user',
 	initialState: initialState,
 	reducers: {
 		setUserData: (state, action: PayloadAction<UserSlice>) => {
-			state = action.payload;
+			const newState = { ...state, ...action.payload };
+			return newState;
 		},
 	},
 });
 
-export const setUserData = userSlice.actions;
+export const { setUserData } = userSlice.actions;
 export default userSlice.reducer;
