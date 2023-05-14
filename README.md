@@ -12,15 +12,15 @@ This project is experimental and is not intended for production use. It is a pla
 ## Stack
 
 - Typescript
-- React
 - Vite
+- React
+- Redux
 - [@tanstack/router](https://tanstack.com/)
 
 ### planned stack
 
 - [@tanstack/query](https://tanstack.com/query/latest)
 - tailwindcss
-- redux: not sure about it, I'll have to investigate about the @tanstack/query state capabilities before.
 
 ## Notes
 
