@@ -1,10 +1,22 @@
-import { RootRoute, Route, Router } from '@tanstack/router';
+import { RootRoute, Route, Router, Outlet } from '@tanstack/router';
 import LoginPage from './pages/login';
 import OrganizationsPages from './pages/organizations';
 import IndexPage from './pages';
 import OrganizationPage from './pages/organization';
+import Register from './pages/register';
 
-const rootRoute = new RootRoute({});
+const rootRoute = new RootRoute({
+	component: () => {
+		return (
+			<>
+				<h1>BernieAUth</h1>
+				<div className='flex flex-col  bg-red-200 grow'>
+					<Outlet />
+				</div>
+			</>
+		);
+	},
+});
 
 const indexRoute = new Route({
 	getParentRoute: () => rootRoute,
@@ -16,6 +28,11 @@ const login = new Route({
 	path: 'login', // similar to /login
 	component: LoginPage,
 });
+const register = new Route({
+	getParentRoute: () => rootRoute,
+	path: 'register',
+	component: Register,
+});
 
 const organizations = new Route({
 	getParentRoute: () => rootRoute,
@@ -26,12 +43,13 @@ const organizations = new Route({
 const organization = new Route({
 	getParentRoute: () => rootRoute,
 	path: '/organization/$organizationId',
-    
+
 	component: OrganizationPage,
 });
 const routeTree = rootRoute.addChildren([
 	indexRoute,
 	login,
+	register,
 	organizations,
 	organization,
 ]);
