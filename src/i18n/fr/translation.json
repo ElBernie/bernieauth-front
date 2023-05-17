@@ -1,3 +1,19 @@
 {
-	"HELLO_WORLD": "Bonjour le monde !"
+	"forms": {
+		"register": {
+			"firstName": "prénom",
+			"name": "nom",
+			"email": "email",
+			"password": "mot de passe",
+			"passwordConfirmation": "confirmation du mot de passe",
+			"submit": "inscription",
+			"placeholder": {
+				"firstName": "votre prénom",
+				"name": "votre nom",
+				"email": "votre@email.com",
+				"password": "votre mot de passe",
+				"passwordConfirmation": "votre mot de passe"
+			}
+		}
+	}
 }

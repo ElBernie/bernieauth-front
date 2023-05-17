@@ -1,0 +1,10 @@
+{
+	"REGISTER_EMAIL_REQUIRED": "Email is required",
+	"REGISTER_EMAIL_FORMAT": "Email must be a valid email (ex:name@domain.com)",
+	"REGISTER_EMAIL_ALREADY_IN_USE": "Email already in use",
+	"REGISTER_PASSWORD_REQUIRED": "The password is required",
+	"REGISTER_PASSWORD_SIZE": "The password must be at least 8 caracters",
+	"REGISTER_PASSWORD_CONFIRMATION_REQUIRED": "The password confirmation is required",
+	"REGISTER_FIRSTNAME_REQUIRED": "First name is required",
+	"REGISTER_PASSWORD_DIFFERENT": "Passwords are not similar"
+}
