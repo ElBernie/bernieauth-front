@@ -4,12 +4,13 @@ import OrganizationsPages from './pages/organizations';
 import IndexPage from './pages';
 import OrganizationPage from './pages/organization';
 import Register from './pages/register';
+import Navbar from './components/Navbar';
 
 const rootRoute = new RootRoute({
 	component: () => {
 		return (
 			<>
-				<h1>BernieAUth</h1>
+				<Navbar />
 				<div className='flex flex-col  bg-red-200 grow'>
 					<Outlet />
 				</div>
